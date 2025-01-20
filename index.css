@@ -1,100 +1,92 @@
-input {
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+.div1{
+    width: 300px;
+    height: 500px;
+    background-color: white;
     text-align: center;
-    font-weight: bold;
-    background-color: rgba(0, 0, 255, 0.622);
-    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+    
+}
+.div2{
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+    
+}
+.div3{
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
     
 }
 
-input::placeholder {
-    color: white;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    width: 90%;
-}
-
-.checkinput{
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    text-align: center;
-    font-weight: bold;
-    background-color: rgba(0, 0, 255, 0.622);
-    color: white;
-}
-
-.radioinput{
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    text-align: center;
-    font-weight: bold;
-    background-color: rgba(0, 0, 255, 0.622);
-    color: white;
-}
-
-.div1 {
-    background-color: red;
-    width: 200px;
-    height: 200px;
-}
-
-.div2 {
-    background-color: blue;
-    width: 200px;
-    height: 200px;
-}
-
-.div3 {
-    background-color: yellow;
-    width: 200px;
-    height: 200px;
-}
-
-.div4 {
+.divMaman{
     background-color: beige;
-    width: 200px;
-    height: 200px;
-}
-
-.DivFlex{
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
-    
-}
-
-.DivFlex2{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.DivFlex3{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.DivFlex4{
-    margin-top: 20px;
+    height: 97vh;
     display: flex;
     justify-content: center;
+    gap: 5%;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
 }
 
-.DivFlex5{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
+.divMaman div {
+    border-radius: 15px;
+    transition: 0.5s;
+    padding: 1rem;
+}
+
+.divMaman div:hover {
+    scale: 1.1;
+}
+
+img{
+    width: 300px;
+    animation: monter-descendre 3s infinite ease-in-out;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn{
+    background-color: brown;
+    color: beige;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: beige;
+    color: brown;
+}
+
+.nom-botte{
+    font-weight: bold;
+}
+
+@keyframes monter-descendre {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
